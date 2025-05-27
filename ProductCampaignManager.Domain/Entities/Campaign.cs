@@ -10,7 +10,7 @@ public class Campaign
     public decimal BidAmount { get; private set; }
     public decimal CampaignFund { get; private set; }
     public CampaignStatus Status { get; private set; }
-    public string Town { get; private set; } = default!;
+    public string Town { get; private set; } = null!;
     public int RadiusInKm { get; private set; }
 
     public Guid UserId { get; private set; }
