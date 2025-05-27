@@ -20,6 +20,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\ProductCampaignManager.Infrastructure\ProductCampaignManager.Infrastructure.csproj" />
+      <ProjectReference Include="..\ProductCampaignManager.Infrastructure\ProductCampaignManager.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>

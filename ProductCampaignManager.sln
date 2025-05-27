@@ -2,11 +2,11 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCampaignManager.API", "backend\ProductCampaignManager.API\ProductCampaignManager.API.csproj", "{15C0AC6D-EA16-40A6-8E7B-E18EC39CDC91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCampaignManager.Domain", "ProductCampaignManager.Domain\ProductCampaignManager.Domain.csproj", "{EC9357DD-8EBE-4EC6-89AF-E7867B36CA0A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCampaignManager.Domain", "backend\ProductCampaignManager.Domain\ProductCampaignManager.Domain.csproj", "{EC9357DD-8EBE-4EC6-89AF-E7867B36CA0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCampaignManager.Application", "ProductCampaignManager.Application\ProductCampaignManager.Application.csproj", "{BB96F882-2685-47B4-B5CF-870C975E189E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCampaignManager.Application", "backend\ProductCampaignManager.Application\ProductCampaignManager.Application.csproj", "{BB96F882-2685-47B4-B5CF-870C975E189E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCampaignManager.Infrastructure", "ProductCampaignManager.Infrastructure\ProductCampaignManager.Infrastructure.csproj", "{104AEB9C-6CAF-448D-ABFD-D4036605E32A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCampaignManager.Infrastructure", "backend\ProductCampaignManager.Infrastructure\ProductCampaignManager.Infrastructure.csproj", "{104AEB9C-6CAF-448D-ABFD-D4036605E32A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
