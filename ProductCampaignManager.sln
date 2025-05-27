@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCampaignManager.Doma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCampaignManager.Application", "ProductCampaignManager.Application\ProductCampaignManager.Application.csproj", "{BB96F882-2685-47B4-B5CF-870C975E189E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCampaignManager.Infrastructure", "ProductCampaignManager.Infrastructure\ProductCampaignManager.Infrastructure.csproj", "{104AEB9C-6CAF-448D-ABFD-D4036605E32A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 		{BB96F882-2685-47B4-B5CF-870C975E189E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB96F882-2685-47B4-B5CF-870C975E189E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB96F882-2685-47B4-B5CF-870C975E189E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{104AEB9C-6CAF-448D-ABFD-D4036605E32A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{104AEB9C-6CAF-448D-ABFD-D4036605E32A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{104AEB9C-6CAF-448D-ABFD-D4036605E32A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{104AEB9C-6CAF-448D-ABFD-D4036605E32A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection

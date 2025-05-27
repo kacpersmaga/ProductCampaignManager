@@ -16,6 +16,13 @@ public class User
         Name = name;
         EmeraldBalance = emeraldBalance;
     }
+    
+    public User(Guid id, string name, decimal emeraldBalance)
+    {
+        Id = id;
+        Name = name;
+        EmeraldBalance = emeraldBalance;
+    }
 
     public bool CanAfford(decimal amount) => EmeraldBalance >= amount;
 
