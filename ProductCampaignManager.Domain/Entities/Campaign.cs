@@ -41,4 +41,22 @@ public class Campaign
 
     public void TurnOn() => Status = CampaignStatus.On;
     public void TurnOff() => Status = CampaignStatus.Off;
+    
+    public void Update(
+        string name,
+        List<string> keywords,
+        decimal bidAmount,
+        decimal campaignFund,
+        CampaignStatus status,
+        string town,
+        int radiusInKm)
+    {
+        Name = name;
+        Keywords = keywords;
+        BidAmount = bidAmount;
+        CampaignFund = campaignFund;
+        Status = status;
+        Town = town;
+        RadiusInKm = radiusInKm;
+    }
 }
