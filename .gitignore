@@ -1,6 +1,8 @@
 bin/
 obj/
 .idea/
+*.db
+*.sqlite
 /packages/
 riderModule.iml
 /_ReSharper.Caches/
