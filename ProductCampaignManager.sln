@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCampaignManager.API", "backend\ProductCampaignManager.API\ProductCampaignManager.API.csproj", "{15C0AC6D-EA16-40A6-8E7B-E18EC39CDC91}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCampaignManager.Domain", "ProductCampaignManager.Domain\ProductCampaignManager.Domain.csproj", "{EC9357DD-8EBE-4EC6-89AF-E7867B36CA0A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,6 +14,10 @@ Global
 		{15C0AC6D-EA16-40A6-8E7B-E18EC39CDC91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15C0AC6D-EA16-40A6-8E7B-E18EC39CDC91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15C0AC6D-EA16-40A6-8E7B-E18EC39CDC91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC9357DD-8EBE-4EC6-89AF-E7867B36CA0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC9357DD-8EBE-4EC6-89AF-E7867B36CA0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC9357DD-8EBE-4EC6-89AF-E7867B36CA0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC9357DD-8EBE-4EC6-89AF-E7867B36CA0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
