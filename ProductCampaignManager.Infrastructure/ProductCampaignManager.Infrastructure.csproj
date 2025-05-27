@@ -11,6 +11,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\ProductCampaignManager.Application\ProductCampaignManager.Application.csproj" />
       <ProjectReference Include="..\ProductCampaignManager.Domain\ProductCampaignManager.Domain.csproj" />
     </ItemGroup>
 
