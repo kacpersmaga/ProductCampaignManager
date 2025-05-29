@@ -35,8 +35,20 @@ public class UpdateCampaignCommandHandler : IRequestHandler<UpdateCampaignComman
         if (campaign == null)
             throw new KeyNotFoundException("Campaign not found");
 
-        campaign.Update(dto.Name, dto.Keywords, dto.BidAmount, dto.CampaignFund,
-            Enum.Parse<CampaignStatus>(dto.Status), dto.Town, dto.RadiusInKm);
+        if (!Enum.TryParse<CampaignStatus>(dto.Status, true, out var status))
+        {
+            throw new ArgumentException($"Invalid campaign status: {dto.Status}");
+        }
+
+        campaign.Update(
+            dto.Name,
+            dto.Keywords,
+            dto.BidAmount,
+            dto.CampaignFund,
+            status,
+            dto.Town,
+            dto.RadiusInKm
+        );
 
         await _repository.UpdateAsync(campaign);
     }
