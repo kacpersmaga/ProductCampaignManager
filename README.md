@@ -45,7 +45,7 @@ cd ProductCampaignManager
    dotnet restore
    dotnet run
    ```
-   The backend will start on `http://localhost:5000` (check `Properties/launchSettings.json` for exact port if different).
+   The backend will start on https://localhost:7263 (preferred) or http://localhost:5290.
 
 ### 3. Run the Frontend
 1. Open a new terminal and navigate to the frontend directory:
