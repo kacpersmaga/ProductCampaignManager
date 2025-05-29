@@ -11,11 +11,16 @@ public class UpdateCampaignCommandHandler : IRequestHandler<UpdateCampaignComman
 {
     private readonly ICampaignRepository _repository;
     private readonly IValidator<CampaignDto> _validator;
+    private readonly IUserRepository _userRepository;
 
-    public UpdateCampaignCommandHandler(ICampaignRepository repository, IValidator<CampaignDto> validator)
+    public UpdateCampaignCommandHandler(
+        ICampaignRepository repository,
+        IValidator<CampaignDto> validator,
+        IUserRepository userRepository)
     {
         _repository = repository;
         _validator = validator;
+        _userRepository = userRepository;
     }
 
     public async Task Handle(UpdateCampaignCommand request, CancellationToken cancellationToken)
@@ -40,6 +45,20 @@ public class UpdateCampaignCommandHandler : IRequestHandler<UpdateCampaignComman
             throw new ArgumentException($"Invalid campaign status: {dto.Status}");
         }
 
+        var user = await _userRepository.GetByIdAsync(dto.UserId);
+        if (user == null)
+            throw new ArgumentException("User not found");
+
+        var fundDifference = dto.CampaignFund - campaign.CampaignFund;
+        if (fundDifference > 0)
+        {
+            if (!user.CanAfford(fundDifference))
+                throw new InvalidOperationException("Insufficient funds to increase campaign fund.");
+
+            user.Deduct(fundDifference);
+            await _userRepository.UpdateAsync(user);
+        }
+        
         campaign.Update(
             dto.Name,
             dto.Keywords,
